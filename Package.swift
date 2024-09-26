@@ -25,12 +25,11 @@ let package = Package(
                 .product(name: "Rudder", package: "rudder-sdk-ios"),
                 .product(name: "CleverTapSDK", package: "clevertap-ios-sdk")
             ],
-            path: "Rudder-CleverTap",
-            sources: ["Classes/"],
+            path: "Rudder-CleverTap/Classes",
             exclude: ["Example"],
-            publicHeadersPath: "Classes/",
+            publicHeadersPath: ".",
             cSettings: [
-                .headerSearchPath("Classes/")
+                .headerSearchPath("Rudder-CleverTap/Classes")
             ]
         )
     ]

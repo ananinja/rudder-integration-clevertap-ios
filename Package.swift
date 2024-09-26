@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "RudderCleverTap",
     platforms: [
-        .iOS(.v9)
+        .iOS(.v12)
     ],
     products: [
         .library(
@@ -25,11 +25,12 @@ let package = Package(
                 .product(name: "Rudder", package: "rudder-sdk-ios"),
                 .product(name: "CleverTapSDK", package: "clevertap-ios-sdk")
             ],
-            path: "Rudder-CleverTap/Classes",
+            path: "Rudder-CleverTap",
+            sources: ["Classes/"],
             exclude: ["Example"],
-            publicHeadersPath: ".",
+            publicHeadersPath: "Classes/",
             cSettings: [
-                .headerSearchPath("Rudder-CleverTap/Classes")
+                .headerSearchPath("Classes/")
             ]
         )
     ]

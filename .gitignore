@@ -70,3 +70,6 @@ fastlane/test_output
 IDEWorkspaceChecks.plist
 *.DS_Store
 RudderConfig.plist
+
+# Swift Package Manager
+Package.resolved

@@ -7,7 +7,7 @@
 //
 
 #import "_AppDelegate.h"
-#import <Rudder/Rudder.h>
+#import <Rudder.h>
 #import <RudderCleverTapFactory.h>
 #import "RudderCleverTapIntegration.h"
 #import <CoreLocation/CoreLocation.h>

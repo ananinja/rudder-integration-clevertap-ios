@@ -12,13 +12,15 @@ let package = Package(
             targets: ["RudderCleverTap"]
         )
     ],
-    dependencies: [],
+    dependencies: [
+        // Rudder SDK
+        .package(url: "https://github.com/rudderlabs/rudder-sdk-ios.git", from: "1.12.0"),
+    ],
     targets: [
         .target(
             name: "RudderCleverTap",
             dependencies: [
                 .product(name: "Rudder", package: "rudder-sdk-ios"),
-                .product(name: "CleverTapSDK", package: "clevertap-ios-sdk")
             ],
             path: "Rudder-CleverTap/Classes",
             exclude: ["Example"],
